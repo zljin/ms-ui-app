@@ -1,0 +1,52 @@
+{
+	"pages": [{
+		"path": "pages/login/login",
+		"style": {
+			"navigationBarTitleText": "ms-uni-app",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "ms-uni-app"
+		}
+	}, {
+		"path": "pages/getitem/getitem",
+		"style": {
+			"navigationBarTitleText": "ms-uni-app",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/listitem/listitem",
+		"style": {
+			"navigationBarTitleText": "ms-uni-app",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/register/register",
+		"style": {
+			"navigationBarTitleText": "ms-uni-app",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/createitem/createitem",
+		"style": {
+			"navigationBarTitleText": "ms-uni-app",
+			"enablePullDownRefresh": false
+		}
+
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "ms-uni-app",
+		"navigationBarBackgroundColor": "#b3e8ae",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	}
+}
