@@ -21,6 +21,8 @@
 
 
 <script>
+	import helper from '../../common/helper.js';
+
 	export default {
 		data() {
 			return {
@@ -68,15 +70,16 @@
 							password: res.password
 						},
 						success(res) {
-							console.log('res',res)
-							if(res.data.status == "success"){
+							console.log('res', res)
+							if (res.data.status == "success") {
 								uni.showToast({
 									title: `登录成功`
 								})
+								helper.token = res.data.data.token
 								uni.navigateTo({
 									url: returnUrl
 								})
-							}else{
+							} else {
 								uni.showToast({
 									title: `账号和密码错误,登录失败`
 								})
