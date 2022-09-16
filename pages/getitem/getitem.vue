@@ -45,7 +45,8 @@
 					promoStatus: 0,
 					promoStatusStr: '无秒杀活动'
 				},
-				amount: 0
+				amount: 0,
+				timer: null
 			}
 		},
 		onLoad() {
@@ -55,9 +56,21 @@
 			this.product.id = id
 			console.log(id)
 			this.getItem(id)
+			this.reloadDom(id)
 		},
 		onReady() {},
+		onUnload() {
+			if(this.timer) {
+				clearTimeout(this.timer);  
+				this.timer = null;  
+			}  
+		},
 		methods: {
+			reloadDom(id) {
+				this.timer = setInterval( () => {
+				    this.getItem(id)	
+				}, 1000)
+			},
 			getItem(id) {
 				let that = this
 				uni.request({
@@ -104,7 +117,6 @@
 							uni.showToast({
 								title: `下单成功，订单号：` + res.data.data.id
 							})
-							getItem(this.product.idStr)
 						}
 					}
 				})
