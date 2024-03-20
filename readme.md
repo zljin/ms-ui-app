@@ -35,3 +35,7 @@ uni.request:
 https://m.imooc.com/wiki/uniapp-introframework
 
 https://uniapp.dcloud.net.cn/component/uniui/uni-ui.html#)
+
+## backup
+
+老版本的前端写法，请参照/html_backup
